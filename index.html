@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadeInMinutes Uploader</title>
+<style>
+  :root { --bg:#fafafa; --fg:#1d1d1f; --muted:#5f6368; --card:#fff; --line:#e3e3e3; --link:#1a5fd0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#131314; --fg:#ececec; --muted:#a0a0a6; --card:#1c1c1e; --line:#2e2e31; --link:#8ab4f8; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; } h2 { font-size:1.15rem; margin-top:32px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 24px; }
+  a { color:var(--link); } code { font-size:.92em; }
+  footer { margin-top:40px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MadeInMinutes Uploader</h1>
+  <p class="sub">A private, single-user tool for the <a href="https://www.youtube.com/channel/UC3sHURsDNkBRSjdfVJxBHWQ">MadeInMinutes</a> YouTube channel.</p>
+
+  <div class="card">
+    <p><strong>This is not a public application.</strong> It is a command-line script that runs only on the channel
+    owner's own computer. There is no website login, no sign-up, and no other users. It is used solely by the owner
+    of the MadeInMinutes channel to manage that channel's own videos.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Uploads the channel owner's own original videos to the MadeInMinutes channel (<code>videos.insert</code>), with title, description and tags.</li>
+    <li>Schedules release times for those videos (<code>status.publishAt</code>).</li>
+    <li>Reads the channel's own statistics and video list (<code>channels.list</code>, <code>playlistItems.list</code>, <code>videos.list</code>) so the owner can review performance.</li>
+  </ul>
+
+  <h2>Google / YouTube permissions requested</h2>
+  <ul>
+    <li><code>youtube.upload</code>: upload videos to the owner's channel</li>
+    <li><code>youtube.readonly</code>: view the owner's channel and video statistics</li>
+  </ul>
+
+  <h2>Data</h2>
+  <p>The tool accesses only the channel owner's own YouTube account. Nothing is collected from anyone else, nothing is sent
+  to third parties, and authorization tokens are stored only on the owner's computer.
+  See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:rather.sam009@gmail.com">rather.sam009@gmail.com</a></p>
+
+  <footer>MadeInMinutes Uploader uses YouTube API Services. ·
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
+  <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
