@@ -36,12 +36,14 @@
     <li>Uploads the channel owner's own original videos to the MadeInMinutes channel (<code>videos.insert</code>), with title, description and tags.</li>
     <li>Schedules release times for those videos (<code>status.publishAt</code>).</li>
     <li>Reads the channel's own statistics and video list (<code>channels.list</code>, <code>playlistItems.list</code>, <code>videos.list</code>) so the owner can review performance.</li>
+    <li>Reads the channel's own aggregated YouTube Analytics reports (views, watch time, audience retention; <code>reports.query</code>) to plan future videos.</li>
   </ul>
 
   <h2>Google / YouTube permissions requested</h2>
   <ul>
     <li><code>youtube.upload</code>: upload videos to the owner's channel</li>
     <li><code>youtube.readonly</code>: view the owner's channel and video statistics</li>
+    <li><code>yt-analytics.readonly</code>: view the owner's own aggregated YouTube Analytics reports</li>
   </ul>
 
   <h2>Data</h2>
