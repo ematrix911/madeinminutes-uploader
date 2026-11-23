@@ -27,7 +27,7 @@
 
   <div class="card">
     <p><strong>This is not a public application.</strong> It is a command-line script that runs only on the channel
-    owner's own computer. There is no website login, no sign-up, and no other users. It is used solely by the owner
+    owner's own computer and own private server. There is no website login, no sign-up, and no other users. It is used solely by the owner
     of the MadeInMinutes channel to manage that channel's own videos.</p>
   </div>
 
@@ -35,6 +35,7 @@
   <ul>
     <li>Uploads the channel owner's own original videos to the MadeInMinutes channel (<code>videos.insert</code>), with title, description and tags.</li>
     <li>Schedules release times for those videos (<code>status.publishAt</code>).</li>
+    <li>Corrects or deletes the owner's own videos when the owner asks for it (<code>videos.update</code>, <code>videos.delete</code>).</li>
     <li>Reads the channel's own statistics and video list (<code>channels.list</code>, <code>playlistItems.list</code>, <code>videos.list</code>) so the owner can review performance.</li>
     <li>Reads the channel's own aggregated YouTube Analytics reports (views, watch time, audience retention; <code>reports.query</code>) to plan future videos.</li>
   </ul>
@@ -43,12 +44,14 @@
   <ul>
     <li><code>youtube.upload</code>: upload videos to the owner's channel</li>
     <li><code>youtube.readonly</code>: view the owner's channel and video statistics</li>
+    <li><code>youtube</code>: edit or delete the owner's own videos (a separate login kept only on the owner's computer)</li>
     <li><code>yt-analytics.readonly</code>: view the owner's own aggregated YouTube Analytics reports</li>
   </ul>
 
   <h2>Data</h2>
   <p>The tool accesses only the channel owner's own YouTube account. Nothing is collected from anyone else, nothing is sent
-  to third parties, and authorization tokens are stored only on the owner's computer.
+  to third parties, and authorization tokens are stored only on the owner's computer and private server
+  (the login that can edit or delete videos is kept only on the computer).
   See the <a href="privacy.html">Privacy Policy</a>.</p>
 
   <h2>Contact</h2>
