@@ -17,11 +17,11 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="sub">MadeInMinutes Uploader · Effective 21 November 2026</p>
+  <p class="sub">MadeInMinutes Uploader · Effective 23 November 2026</p>
 
   <p>MadeInMinutes Uploader ("the tool") is a private, single-user script operated by the owner of the
   <a href="https://www.youtube.com/channel/UC3sHURsDNkBRSjdfVJxBHWQ">MadeInMinutes</a> YouTube channel. It runs only on
-  the owner's own computer and is not offered to the public. This policy explains how it handles data.</p>
+  the owner's own computer and the owner's own private server, and is not offered to the public. This policy explains how it handles data.</p>
 
   <h2>YouTube API Services</h2>
   <p>The tool uses YouTube API Services. By using it, you agree to be bound by the
@@ -38,12 +38,29 @@
   </ul>
   <p>The tool does not access, collect or process data belonging to any other YouTube user.</p>
 
+  <h2>Meta (Facebook, Instagram, Threads) and Bluesky</h2>
+  <p>The tool also publishes the owner's own short videos to the owner's own accounts on other platforms, through
+  each platform's official API and with the owner's authorization:</p>
+  <ul>
+    <li><strong>Facebook and Instagram</strong> (Meta app "MadeInMinutes Crosspost"): publishing Reels to the owner's
+    Madeinminutes Facebook Page and the owner's Instagram professional account, and reading those accounts' own
+    aggregated insights (for example views, reach, watch time and follower counts) and like and comment counts.</li>
+    <li><strong>Threads</strong>: publishing posts to the owner's own Threads profile and reading their view, like and
+    reply counts.</li>
+    <li><strong>Bluesky</strong>: publishing posts with video to the owner's own Bluesky account and reading public
+    like and repost counts.</li>
+  </ul>
+  <p>The tool does not read or store the content of comments or messages, and does not collect personal information
+  about any other user. It does not log in other people, and only the owner's own accounts are connected.</p>
+
   <h2>How information is used</h2>
   <p>Information is used only to upload and schedule the owner's own videos and to let the owner review their channel's
   performance. It is not used for advertising, profiling, or any other purpose.</p>
 
   <h2>Storage</h2>
-  <p>OAuth authorization tokens are stored only on the owner's local computer. Channel statistics are read on demand and
+  <p>Authorization tokens are stored only on the owner's own computer and the owner's own private server,
+  with access restricted to the owner. Post IDs and links of the owner's own published posts, and periodic
+  aggregate counts (for example views and likes), are kept in local files on those machines. Channel statistics are read on demand and
   are not stored on any server. No data is kept for longer than needed for these purposes, and no data is stored by the
   tool for more than 30 days without being refreshed from the API.</p>
 
@@ -57,6 +74,18 @@
   <p>Access can be revoked at any time from the Google security settings page at
   <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.
   Locally stored tokens can also be deleted from the computer running the tool.</p>
+
+  <h2 id="data-deletion">Data deletion</h2>
+  <p>The tool stores no data about anyone other than the account owner. To delete the data the tool holds:</p>
+  <ul>
+    <li><strong>Facebook / Instagram / Threads:</strong> remove the app under Facebook Settings → Apps and Websites
+    (or Instagram / Threads → Settings → Website permissions), then delete the stored token files. All tokens stop
+    working as soon as the app is removed.</li>
+    <li><strong>Bluesky:</strong> revoke the app password under Bluesky Settings → Privacy and security → App passwords.</li>
+    <li><strong>YouTube:</strong> revoke access as described above.</li>
+  </ul>
+  <p>Anyone who believes the tool holds data about them can email the contact address below to request deletion;
+  requests are answered within 30 days.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
